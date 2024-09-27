@@ -1,0 +1,177 @@
+:root {}
+    --
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(46, 45, 45);
+}
+
+header{
+    background-color:lightslategrey ;
+    display: flex;
+    background-color: var();
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center ;
+    gap:5px;
+}
+
+header img {
+    height: 80px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+
+.exit {
+    color: rgb(161, 160, 158);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.exit:hover{
+    color: white;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+
+.gridBlocks{
+    background-color:lightslategrey ;
+    padding: 20px;
+    border-radius: 20px;
+    flex-grow: 10000;
+}
+
+.area{
+    display: grid;
+    grid-template-columns: repeat(10, 28px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell{
+    height: 28px;
+    width: 28px;
+    background-color:  rgb(46, 45, 45);
+    border-radius: 3px;
+
+    text-align: center;
+    font-weight: bold;
+    line-height: 28;
+    font-size: 22px;
+}
+
+.pointsBlock {
+    width: 300px;
+    background-color: lightslategrey;
+    border-radius: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+label{
+    background-color:  rgb(46, 45, 45);
+    padding: 5px;
+    border-radius: 30px;
+    min-width: 100px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+label input{
+    display: none;
+}
+
+label:has(input:checked){
+    background-color: orange;
+}
+
+.btn {
+    background-color: green;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.cell.active{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.cell.flag{
+    background-image: url(./pictures/flag-in-hole_26f3.png);
+    background-color: green;
+    background-size: contain;
+}
+
+.cell.bomb{
+    background-image: url(./pictures/bomb_1f4a3.png);
+    background-color: orange;
+    background-size: contain;
+}
+
+section{
+    background-color: rgba(87, 86, 86, 0.7);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUp {
+    background-color:lightslategrey ;
+    border: 3px solid rgb(194, 193, 193);
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.popUp h2 {
+    text-transform: uppercase;
+}
+
+.popUp input {
+    font-style: 26px;
+    outline: none;
+    border-radius: 15px;
+    border: 0;
+    padding: 0 15px;
+    width: 260px;
+}
