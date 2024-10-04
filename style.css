@@ -71,7 +71,7 @@ main{
 
     text-align: center;
     font-weight: bold;
-    line-height: 28;
+    line-height: 28px;
     font-size: 22px;
 }
 
@@ -121,6 +121,8 @@ label:has(input:checked){
     align-items: center;
     font-weight: bold;
     border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .cell.active{
